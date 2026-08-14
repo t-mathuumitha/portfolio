@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathuumitha Thevarajah | Data Analyst& Undergraduate Student</title>
+  <meta name="description" content="Portfolio of Mathuumitha Thevarajah, Data Analyst, Data Scientist, and Undergraduate Student at University of Vavuniya, Sri Lanka." />
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Instant Theme Restoration Script (Prevents FOUC) -->
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('mathuumitha_portfolio_theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch(e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- Slim Golden Pill Vertical Floating Navbar -->
+    <nav class="golden-pill-navbar" id="golden-pill-navbar" aria-label="Main Navigation">
+      <div class="pill-container">
+        <ul class="pill-nav-list">
+          
+          <!-- 1. Home -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link active" data-section="home" href="#home" aria-label="Home">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+              <span class="pill-tooltip">Home</span>
+            </a>
+          </li>
+
+          <!-- 2. About -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link" data-section="about" href="#about" aria-label="About">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+              </svg>
+              <span class="pill-tooltip">About</span>
+            </a>
+          </li>
+
+          <!-- 3. Experience -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link" data-section="experience" href="#resume" aria-label="Experience">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"/>
+              </svg>
+              <span class="pill-tooltip">Experience</span>
+            </a>
+          </li>
+
+          <!-- 4. Skills -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link" data-section="skills" href="#skills" aria-label="Skills">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M20 3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h6l-2 3v1h8v-1l-2-3h6c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 13H4V5h16v11zM7 14h2V10H7v4zm4 0h2V7h-2v7zm4 0h2v-5h-2v5z"/>
+              </svg>
+              <span class="pill-tooltip">Skills</span>
+            </a>
+          </li>
+
+          <!-- 5. Education -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link" data-section="education" href="#resume" aria-label="Education">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"/>
+              </svg>
+              <span class="pill-tooltip">Education</span>
+            </a>
+          </li>
+
+          <!-- 6. Projects -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link" data-section="projects" href="#projects" aria-label="Projects">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M20 6h-8l-2-2H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 12H4V8h16v10z"/>
+              </svg>
+              <span class="pill-tooltip">Projects</span>
+            </a>
+          </li>
+
+          <!-- 7. Contact -->
+          <li class="pill-nav-item">
+            <a class="pill-nav-link nav-link" data-section="contact" href="#contact" aria-label="Contact">
+              <svg class="pill-nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+              </svg>
+              <span class="pill-tooltip">Contact</span>
+            </a>
+          </li>
+
+          <!-- 8. Theme Toggle (Dark / Light Mode) -->
+          <li class="pill-nav-item">
+            <button class="pill-nav-link theme-toggle-nav-btn" id="nav-theme-toggle-btn" type="button" aria-label="Toggle dark and light mode" title="Switch Theme (Light / Dark)">
+              <!-- Moon Icon (for Dark Mode) -->
+              <svg class="pill-nav-icon theme-icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M12.3 2a10 10 0 0 0 9.7 11.5 10 10 0 1 1-11.5-9.7z"/>
+              </svg>
+              <!-- Sun Icon (for Light Mode) -->
+              <svg class="pill-nav-icon theme-icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="#000000" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#000000" d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zm-9-9v2c0 .55.45 1 1 1s1-.45 1-1V4c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-12.37l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0zm-12.37 12.37l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0z"/>
+              </svg>
+              <span class="pill-tooltip" id="nav-theme-tooltip">Theme</span>
+            </button>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Main Scrollable Content Area -->
+    <main class="main-content">
+
+      <!-- ================= 1. HERO SECTION ================= -->
+      <section id="home" class="hero-section">
+        <div class="section-wrapper">
+          <div class="hero-grid">
+            
+            <div class="hero-left">
+              <div class="hero-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                <span>HI THERE!</span>
+              </div>
+
+              <h1 class="hero-title">
+                I'M <span class="text-gold"> MATHUUMITHA </span>
+              </h1>
+
+              <div class="hero-typed-wrapper" aria-label="Role animation">
+                <span class="typed-static">I am a&nbsp;</span><span class="typed-dynamic" id="typed-role-text"></span><span class="typed-cursor" aria-hidden="true">|</span>
+              </div>
+
+              <div class="hero-subtitle">
+                DATA ANALYST | UNDERGRADUATE
+              </div>
+
+              <p class="hero-desc">
+                Passionate undergraduate student at the University of Vavuniya with a strong interest in Data Analytics, Data Science, technology, problem solving and creating meaningful insights from data.
+              </p>
+
+              <div class="hero-tags">
+                <div class="tag-pill">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                  <span>SQL & Data Analytics</span>
+                </div>
+                <div class="tag-pill">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  <span>Power BI & Python</span>
+                </div>
+                <div class="tag-pill">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  <span>University of Vavuniya</span>
+                </div>
+              </div>
+
+              <div class="hero-ctas">
+                <a class="btn btn-gold scroll-link" data-section="projects">
+                  <span>EXPLORE MY WORK</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" title="Open or Download Resume PDF">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>RESUME (PDF)</span>
+                </a>
+                <a class="btn btn-outline scroll-link" data-section="contact">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  <span>CONTACT ME</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mathuumitha-thevarajah" target="_blank" rel="noopener noreferrer" class="btn-icon-only" title="LinkedIn Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="https://github.com/t-mathuumitha" target="_blank" rel="noopener noreferrer" class="btn-icon-only" title="GitHub Profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path></svg>
+                </a>
+                <button class="btn-icon-only modal-trigger-cv" title="View CV">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Hero Portrait Frame -->
+            <div class="hero-right">
+              <div class="portrait-container">
+                <div class="portrait-backdrop"></div>
+                <div class="portrait-corners-tl"></div>
+                <div class="portrait-corners-br"></div>
+
+                <div class="portrait-card">
+                  <div class="portrait-inner">
+                    <div class="portrait-top">
+                      <span class="portrait-tag">DATA ANALYST</span>
+                      <div class="pulse-dot"></div>
+                    </div>
+
+                    <div class="portrait-center">
+                      <div class="portrait-avatar-circle">
+                        <img src="/profile.png" alt="Mathuumitha Thevarajah - Data Analyst & Data Scientist" class="profile-img" />
+                      </div>
+                      <h3 style="font-size: 1.1rem; font-weight: 800; color: #fff;">Mathuumitha Thevarajah</h3>
+                      <p style="font-size: 0.75rem; color: var(--gold-primary); font-family: var(--font-mono); margin-top: 0.2rem;">University of Vavuniya</p>
+                    </div>
+
+                    <div class="portrait-bottom">
+                      <div>
+                        <div class="stat-mini-label">Academic Performance: </div>
+                        <div class="stat-mini-val">Currently pursuing BICT (Hons)</div>
+                      </div>
+                      <div style="width: 1px; background: var(--border-color);"></div>
+                      <div>
+                        <div class="stat-mini-label">IEEE Member</div>
+                        <div class="stat-mini-val">Secretary</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="floating-badge">
+                  <div class="floating-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  </div>
+                  <div>
+                    <div style="font-size: 0.8rem; font-weight: 800; color: #fff;">Data & Insights</div>
+                    <div style="font-size: 0.65rem; color: var(--text-muted); font-family: var(--font-mono);">Analytical Thinking</div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= 2. ABOUT ME SECTION ================= -->
+      <section id="about">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>GET TO KNOW ME</span>
+            </div>
+            <h2 class="section-title">ABOUT <span class="text-gold">ME</span></h2>
+            <div class="gold-bar"></div>
+          </div>
+
+          <div class="about-grid">
+            
+            <div>
+              <div class="about-bio-box">
+                "I'm Mathuumitha Thevarajah, an undergraduate student at the University of Vavuniya with a strong interest in Data Analytics, Data Science, technology and problem solving. I enjoy transforming raw data into meaningful insights and using analytical thinking to support better decisions."
+              </div>
+
+              <div class="about-highlights">
+                <div class="about-highlight-card">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
+                  <div>
+                    <div style="font-size: 0.85rem; font-weight: 800; color: #fff;">University Education</div>
+                    <div style="font-size: 0.75rem; color: var(--text-gray); margin-top: 0.2rem;">B.Sc. Honors Student at University of Vavuniya, Sri Lanka</div>
+                  </div>
+                </div>
+
+                <div class="about-highlight-card">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                  <div>
+                    <div style="font-size: 0.85rem; font-weight: 800; color: #fff;">Focus & Career Goal</div>
+                    <div style="font-size: 0.75rem; color: var(--text-gray); margin-top: 0.2rem;">Data Analytics, Data Science, Business Intelligence & Smart Solutions</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stats 4-Grid -->
+            <div class="stats-grid">
+              <div class="portfolio-card stat-card">
+                <div class="stat-number">04+</div>
+                <div class="stat-label">Projects Completed</div>
+                <div class="stat-sub">Data & software solutions</div>
+              </div>
+
+              <div class="portfolio-card stat-card">
+                <div class="stat-number">03+</div>
+                <div class="stat-label">Programming / Data Tools</div>
+                <div class="stat-sub">Python, SQL, Power BI & Java</div>
+              </div>
+
+              <div class="portfolio-card stat-card">
+                <div class="stat-number">05+</div>
+                <div class="stat-label">Certifications</div>
+                <div class="stat-sub">Industry & academic credentials</div>
+              </div>
+
+              <div class="portfolio-card stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Passion for Learning</div>
+                <div class="stat-sub">Continuous growth & logic</div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- WHAT I DO -->
+          <div style="margin-top: 2.5rem; text-align: center;">
+            <div style="margin-bottom: 1.25rem;">
+              <h3 style="font-size: 1.35rem; font-weight: 800; text-align: center;">WHAT <span class="text-gold">I DO</span></h3>
+              <p style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.25rem; text-align: center;">Core areas of focus & technical capabilities</p>
+            </div>
+
+            <div class="what-i-do-grid">
+              
+              <div class="portfolio-card service-card">
+                <div>
+                  <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                  </div>
+                  <h4 class="service-title">DATA ANALYSIS</h4>
+                  <p class="service-desc">Analyzing datasets, identifying patterns and generating meaningful insights to drive informed decisions.</p>
+                </div>
+                <div class="service-tags">
+                  <span class="tag-pill">Python</span>
+                  <span class="tag-pill">Pandas</span>
+                  <span class="tag-pill">Statistics</span>
+                </div>
+              </div>
+
+              <div class="portfolio-card service-card">
+                <div>
+                  <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                  </div>
+                  <h4 class="service-title">DATA VISUALIZATION</h4>
+                  <p class="service-desc">Creating clear and interactive dashboards to communicate data effectively to stakeholders.</p>
+                </div>
+                <div class="service-tags">
+                  <span class="tag-pill">Power BI</span>
+                  <span class="tag-pill">Matplotlib</span>
+                  <span class="tag-pill">Dashboards</span>
+                </div>
+              </div>
+
+              <div class="portfolio-card service-card">
+                <div>
+                  <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                  </div>
+                  <h4 class="service-title">DATABASE MANAGEMENT</h4>
+                  <p class="service-desc">Working with relational databases, writing efficient SQL queries and structuring data models accurately.</p>
+                </div>
+                <div class="service-tags">
+                  <span class="tag-pill">SQL</span>
+                  <span class="tag-pill">MySQL</span>
+                  <span class="tag-pill">Queries</span>
+                </div>
+              </div>
+
+              <div class="portfolio-card service-card">
+                <div>
+                  <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path><path d="M9 18h6"></path><path d="M10 22h4"></path></svg>
+                  </div>
+                  <h4 class="service-title">PROBLEM SOLVING</h4>
+                  <p class="service-desc">Using analytical and logical thinking to solve complex technical problems and streamline processes.</p>
+                </div>
+                <div class="service-tags">
+                  <span class="tag-pill">Algorithms</span>
+                  <span class="tag-pill">Java</span>
+                  <span class="tag-pill">Logic</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 3. RESUME SECTION ================= -->
+      <section id="resume">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+              <span>ACADEMIC & PROFESSIONAL HISTORY</span>
+            </div>
+            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem; margin-top: 0.25rem;">
+              <h2 class="section-title" style="margin-top: 0;">MY <span class="text-gold">RESUME</span></h2>
+              <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="padding: 0.45rem 1.1rem; font-size: 0.72rem; text-decoration: none;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>OPEN / DOWNLOAD RESUME (PDF)</span>
+              </a>
+            </div>
+            <div class="gold-bar"></div>
+          </div>
+
+          <!-- Resume Tab Filters -->
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter-resume="all">Show All Timeline</button>
+            <button class="filter-btn" data-filter-resume="education">Education</button>
+            <button class="filter-btn" data-filter-resume="experience">Experience</button>
+            <button class="filter-btn" data-filter-resume="leadership">Leadership & Volunteer</button>
+          </div>
+
+          <div class="resume-grid two-cols">
+            
+            <!-- Education Column -->
+            <div class="resume-col" id="col-education">
+              <div class="resume-col-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                <span>EDUCATION</span>
+              </div>
+
+              <div class="timeline-list">
+                <div class="portfolio-card accent-border-left timeline-card">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="timeline-role">Undergraduate Student</span>
+                      <h4 class="timeline-title">University of Vavuniya</h4>
+                      <p class="timeline-sub">BICT. (Hons.) in Information Communication Technology</p>
+                    </div>
+                    <span class="timeline-date">2022 – Present</span>
+                  </div>
+
+                  <div class="timeline-body">
+                    <p style="font-size: 0.75rem; font-weight: 700; color: #fff; font-family: var(--font-mono);">Relevant Academic Areas:</p>
+                    <div class="module-tags">
+                      <span class="tag-pill">Data Structures & Algorithms</span>
+                      <span class="tag-pill">Database Management Systems (SQL)</span>
+                      <span class="tag-pill">Object-Oriented Programming with Java</span>
+                      <span class="tag-pill">Web Technologies (HTML/CSS/JavaScript)</span>
+                      <span class="tag-pill">Applied Statistics</span>
+                      <span class="tag-pill">Data Mining & Business Intelligence</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience & Leadership Column -->
+            <div class="resume-col" id="col-experience">
+              <div class="resume-col-title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                <span>EXPERIENCE & LEADERSHIP</span>
+              </div>
+
+              <div class="timeline-list">
+                
+                <div class="portfolio-card accent-border-left timeline-card" data-exp-type="leadership">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="timeline-role">Executive Committee</span>
+                      <h4 class="timeline-title">Secretary — IEEE Computer Society Student Branch Chapter</h4>
+                      <p class="timeline-sub">IEEE Student Branch, University of Vavuniya</p>
+                    </div>
+                    <span class="timeline-date">2025/2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="font-size: 0.78rem; color: var(--text-gray); line-height: 1.5; margin-bottom: 0.6rem;">Contributing to the planning, coordination, documentation, and execution of technical, career-development, and student-focused activities.</p>
+                    <ul class="timeline-bullet-list">
+                      <li>Support chapter administration and official communication.</li>
+                      <li>Coordinate technical sessions, workshops, and career-focused programs.</li>
+                      <li>Collaborate with Executive Committee members and student volunteers.</li>
+                      <li>Assist with event planning, scheduling, documentation, and coordination.</li>
+                      <li>Communicate with speakers, participants, and organizing teams.</li>
+                      <li>Support student engagement and professional-development activities.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="portfolio-card accent-border-left timeline-card" data-exp-type="experience">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="timeline-role">Academic Projects</span>
+                      <h4 class="timeline-title">Academic Projects</h4>
+                      <p class="timeline-sub">University Academic & Independent Projects</p>
+                    </div>
+                    <span class="timeline-date">2023 - Present</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="font-size: 0.78rem; color: var(--text-gray); line-height: 1.5; margin-bottom: 0.6rem;">Developing practical academic and independent projects focused on data analysis, programming, databases, and software development.</p>
+                    <ul class="timeline-bullet-list">
+                      <li>Cleaned and explored tabular datasets using Python and SQL.</li>
+                      <li>Used Python libraries such as Pandas and NumPy where applicable.</li>
+                      <li>Created data analysis and visualization solutions using Excel and Power BI where applicable.</li>
+                      <li>Developed Java-based academic applications using object-oriented programming concepts.</li>
+                      <li>Worked with relational databases and SQL queries.</li>
+                      <li>Applied analytical thinking and problem-solving to academic and personal projects.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="portfolio-card accent-border-left timeline-card" data-exp-type="leadership">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="timeline-role">Volunteer / Event Coordination</span>
+                      <h4 class="timeline-title">Volunteer & Event Coordination</h4>
+                      <p class="timeline-sub">IEEE & University Events</p>
+                    </div>
+                    <span class="timeline-date">2023 - Present</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="font-size: 0.78rem; color: var(--text-gray); line-height: 1.5; margin-bottom: 0.6rem;">Contributed to the organization and coordination of technical, career-development, and student-focused programs.</p>
+                    <ul class="timeline-bullet-list">
+                      <li>Assisted with event preparation and coordination.</li>
+                      <li>Supported participant communication and team coordination.</li>
+                      <li>Assisted with documentation and program management.</li>
+                      <li>Worked collaboratively with organizing committees.</li>
+                      <li>Contributed to technical sessions, workshops, and career-focused events.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="portfolio-card accent-border-left timeline-card" data-exp-type="leadership">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="timeline-role">Faculty Coordinator</span>
+                      <h4 class="timeline-title">Faculty Coordinator — Zero Plastic Community</h4>
+                      <p class="timeline-sub">University of Vavuniya</p>
+                    </div>
+                    <span class="timeline-date">2025/2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <ul class="timeline-bullet-list">
+                      <li>Leading faculty-level environmental sustainability campaigns, awareness workshops, and plastic reduction drives.</li>
+                      <li>Coordinating student volunteer activities and community engagement initiatives across university departments.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="portfolio-card accent-border-left timeline-card" data-exp-type="leadership">
+                  <div class="timeline-header">
+                    <div>
+                      <span class="timeline-role">Active Member</span>
+                      <h4 class="timeline-title">Active Member — IEEE Student Branch</h4>
+                      <p class="timeline-sub">University of Vavuniya</p>
+                    </div>
+                    <span class="timeline-date">2025/2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <ul class="timeline-bullet-list">
+                      <li>Actively contributing to student branch activities, technical symposiums, and community outreach events.</li>
+                      <li>Supporting volunteer operations and student engagement programs across the university chapter.</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 4. SKILLS SECTION ================= -->
+      <section id="skills">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              <span>TECHNICAL PROFICIENCY</span>
+            </div>
+            <h2 class="section-title">MY <span class="text-gold">SKILLS</span></h2>
+            <div class="gold-bar"></div>
+          </div>
+
+          <!-- Skills Filter Bar -->
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter-skills="all">ALL SKILLS</button>
+            <button class="filter-btn" data-filter-skills="technical">DATA & PROGRAMMING</button>
+            <button class="filter-btn" data-filter-skills="data">DATA ANALYTICS</button>
+            <button class="filter-btn" data-filter-skills="web">WEB DEV</button>
+            <button class="filter-btn" data-filter-skills="soft">SOFT SKILLS</button>
+          </div>
+
+          <!-- Skills Grid -->
+          <div class="skills-grid" id="skills-grid">
+            <!-- Dynamically populated via JS or pre-rendered with data attributes -->
+          </div>
+
+          <div style="margin-top: 2rem; padding: 1.5rem; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
+            <div>
+              <h4 style="font-size: 0.95rem; font-weight: 800; color: #fff;">Continuous Skill Development</h4>
+              <p style="font-size: 0.75rem; color: var(--text-gray); margin-top: 0.2rem; max-width: 600px;">
+                Actively mastering advanced DAX for Power BI, Python Machine Learning libraries (Scikit-Learn), and advanced SQL query optimization at the University of Vavuniya.
+              </p>
+            </div>
+            <div style="font-size: 0.7rem; font-family: var(--font-mono); font-weight: 700; color: var(--gold-primary); background: rgba(234, 179, 8, 0.1); border: 1px solid var(--border-gold); padding: 0.4rem 0.85rem; border-radius: 8px;">
+              LEARNING ALWAYS IN PROGRESS
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 5. PROJECTS SECTION ================= -->
+      <section id="projects">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L8.6 3.3A2 2 0 0 0 6.9 2.5H4a2 2 0 0 0-2 2v13.5a2 2 0 0 0 2 2h16z"></path></svg>
+              <span>FEATURED WORK & SHOWCASES</span>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.25rem;">
+              <h2 class="section-title" style="margin-top: 0;">MY <span class="text-gold">PROJECTS</span></h2>
+              <button id="admin-access-btn" class="btn btn-outline" style="padding: 0.4rem 0.85rem; font-size: 0.72rem; font-family: var(--font-mono); font-weight: 700; gap: 0.4rem; backdrop-filter: blur(8px);">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                <span>ADMIN ACCESS</span>
+              </button>
+            </div>
+            <div class="gold-bar"></div>
+          </div>
+
+          <!-- Active Admin Status Bar (Shown when logged in) -->
+          <div id="admin-status-bar" style="display: none; margin-bottom: 1.5rem; padding: 0.85rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e;"></span>
+              <span style="font-size: 0.8rem; font-family: var(--font-mono); font-weight: 700; color: var(--text-white);">ADMIN MODE ACTIVE — Project Management Unlocked</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <button id="admin-add-project-btn" class="btn btn-gold" style="padding: 0.45rem 0.85rem; font-size: 0.75rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="18" y1="12" x2="6" y2="12"></line></svg>
+                <span>ADD NEW PROJECT</span>
+              </button>
+              <button id="admin-logout-btn" class="btn btn-outline" style="padding: 0.45rem 0.85rem; font-size: 0.75rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                <span>LOGOUT ADMIN</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Project Filter Bar -->
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter-projects="all">ALL PROJECTS</button>
+            <button class="filter-btn" data-filter-projects="data">DATA ANALYTICS</button>
+            <button class="filter-btn" data-filter-projects="visualization">POWER BI / DASHBOARDS</button>
+            <button class="filter-btn" data-filter-projects="software">JAVA / SOFTWARE</button>
+            <button class="filter-btn" data-filter-projects="web">WEB APPS</button>
+          </div>
+
+          <div class="projects-grid" id="projects-grid">
+            <!-- Dynamically Rendered via JS -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 6. CERTIFICATIONS SECTION ================= -->
+      <section id="certifications">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+              <span>HONORS & CREDENTIALS</span>
+            </div>
+            <h2 class="section-title">CERTIFICATIONS</h2>
+            <div class="gold-bar"></div>
+          </div>
+
+          <!-- Active Admin Certification Bar (Shown when logged in) -->
+          <div id="admin-cert-status-bar" style="display: none; margin-bottom: 1.5rem; padding: 0.85rem 1.25rem; background: var(--bg-card); border: 1px solid var(--border-gold); border-radius: 12px; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;">
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <span style="width: 10px; height: 10px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 8px #22c55e;"></span>
+              <span style="font-size: 0.8rem; font-family: var(--font-mono); font-weight: 700; color: var(--text-white);">ADMIN MODE — Certifications Management</span>
+            </div>
+            <div style="display: flex; align-items: center; gap: 0.75rem;">
+              <button id="admin-add-cert-btn" class="btn btn-gold" style="padding: 0.45rem 0.85rem; font-size: 0.75rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="18" y1="12" x2="6" y2="12"></line></svg>
+                <span>ADD NEW CERTIFICATE</span>
+              </button>
+              <button id="admin-manage-certs-btn" class="btn btn-outline" style="padding: 0.45rem 0.85rem; font-size: 0.75rem;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>MANAGE ALL</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cert-grid" id="certifications-grid">
+            <!-- Rendered by JavaScript -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 7. ACHIEVEMENTS SECTION ================= -->
+      <section id="achievements">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path></svg>
+              <span>LEADERSHIP & CAMPUS ACTIVITIES</span>
+            </div>
+            <h2 class="section-title">ACHIEVEMENTS</h2>
+            <div class="gold-bar"></div>
+          </div>
+
+          <div class="achieve-list" id="achievements-list">
+            <!-- Rendered by JavaScript -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 8. CONTACT SECTION ================= -->
+      <section id="contact">
+        <div class="section-wrapper">
+          
+          <div class="section-header">
+            <div class="section-eyebrow">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+              <span>SAY HELLO</span>
+            </div>
+            <h2 class="section-title">LET'S <span class="text-gold">CONNECT</span></h2>
+            <div class="gold-bar"></div>
+          </div>
+
+          <p style="font-size: 1rem; color: #d1d5db; margin-bottom: 2rem;">
+            "Have a project, opportunity or idea? I'd love to connect and collaborate."
+          </p>
+
+          <div class="contact-grid">
+            
+            <div class="contact-cards-col">
+              
+              <!-- Primary Email -->
+              <div class="contact-info-card">
+                <div class="contact-info-left">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">Primary Email</div>
+                    <a href="mailto:tmathuumitha1243@gmail.com" class="contact-val">tmathuumitha1243@gmail.com</a>
+                  </div>
+                </div>
+                <button class="btn-icon-only btn-copy-email" data-email="tmathuumitha1243@gmail.com" title="Copy email">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                </button>
+              </div>
+
+              <!-- WhatsApp Direct -->
+              <div class="contact-info-card">
+                <div class="contact-info-left">
+                  <div class="contact-icon-box" style="color: #22c55e;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">WhatsApp Direct</div>
+                    <a href="https://wa.me/94755357344" target="_blank" rel="noopener noreferrer" class="contact-val" style="color: #22c55e; font-weight: 700;">+94 75 535 7344</a>
+                  </div>
+                </div>
+                <a href="https://wa.me/94755357344" target="_blank" rel="noopener noreferrer" class="btn-icon-only" title="Chat on WhatsApp" style="color: #22c55e; text-decoration: none; display: flex; align-items: center; justify-content: center;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                </a>
+              </div>
+
+              <!-- University Email -->
+              <div class="contact-info-card">
+                <div class="contact-info-left">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">University Email</div>
+                    <a href="mailto:2022icts129@stu.vau.ac.lk" class="contact-val">2022icts129@stu.vau.ac.lk</a>
+                  </div>
+                </div>
+                <button class="btn-icon-only btn-copy-email" data-email="2022icts129@stu.vau.ac.lk" title="Copy email">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-info-card">
+                <div class="contact-info-left">
+                  <div class="contact-icon-box">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div>
+                    <div class="contact-label">Location & Institution</div>
+                    <div style="font-size: 0.85rem; font-weight: 700; color: var(--text-white);">University of Vavuniya, Sri Lanka</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Profiles -->
+              <div style="padding: 1.25rem; background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px;">
+                <div class="contact-label" style="margin-bottom: 0.75rem;">Social Profiles & GitHub:</div>
+                <div style="display: flex; gap: 0.75rem;">
+                  <a href="https://github.com/t-mathuumitha" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="flex: 1; padding: 0.65rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path></svg>
+                    <span>GitHub</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/mathuumitha-thevarajah" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="flex: 1; padding: 0.65rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    <span>LinkedIn</span>
+                  </a>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+              <form class="contact-form" id="contact-form">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; margin-bottom: 0.5rem;">
+                  <h3 style="font-size: 1.1rem; font-weight: 800; color: var(--text-white); margin: 0;">Send Message via WhatsApp</h3>
+                  <span style="font-size: 0.7rem; font-family: var(--font-mono); color: #22c55e; background: rgba(34, 197, 94, 0.12); border: 1px solid rgba(34, 197, 94, 0.3); padding: 0.2rem 0.55rem; border-radius: 20px; font-weight: 700;">+94 75 535 7344</span>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label class="form-label" for="contact-name">Your Name *</label>
+                    <input type="text" id="contact-name" class="form-input" placeholder="e.g. Sarah Perera" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="contact-email">Your Email *</label>
+                    <input type="email" id="contact-email" class="form-input" placeholder="sarah@example.com" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-subject">Subject *</label>
+                  <input type="text" id="contact-subject" class="form-input" placeholder="Data Analyst Opportunity / Collaboration / Inquiry" required />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="contact-message">Your Message *</label>
+                  <textarea id="contact-message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold" style="width: 100%; margin-top: 0.5rem; display: flex; align-items: center; justify-content: center; gap: 0.6rem;">
+                  <span>SEND MESSAGE VIA WHATSAPP</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </button>
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ================= 9. FOOTER ================= -->
+      <footer class="site-footer">
+        <div class="footer-content">
+          <div>
+            <div class="footer-copy">© 2026 <strong>Mathuumitha Thevarajah</strong>. All rights reserved.</div>
+            <div style="font-size: 0.7rem; color: var(--text-muted); margin-top: 0.2rem;">Designed & Developed with passion for Data Analytics.</div>
+          </div>
+
+          <div class="footer-links">
+            <a href="https://www.linkedin.com/in/mathuumitha-thevarajah" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect width="4" height="12" x="2" y="9"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>LinkedIn</span>
+            </a>
+            <span style="color: var(--text-muted);">•</span>
+            <a href="https://github.com/t-mathuumitha" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.35rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path></svg>
+              <span>GitHub</span>
+            </a>
+            <span style="color: var(--text-muted);">•</span>
+            <a href="mailto:mathuumithat@gmail.com">Email</a>
+          </div>
+
+          <button class="btn-icon-only" id="back-to-top-btn" title="Back to top">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          </button>
+        </div>
+      </footer>
+
+    </main>
+
+  </div>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. Curriculum Vitae CV Printable Modal -->
+  <div class="modal-backdrop" id="cv-modal">
+    <div class="modal-window" id="cv-modal-window">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div style="background: var(--gold-primary); color: #000; font-weight: 800; padding: 0.3rem 0.6rem; border-radius: 6px; font-size: 0.8rem; font-family: var(--font-mono);">CV</div>
+          <div>
+            <div class="modal-title">Mathuumitha Thevarajah - Curriculum Vitae</div>
+            <div style="font-size: 0.7rem; color: var(--gold-primary); font-family: var(--font-mono);">University of Vavuniya • Data Analyst</div>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;" class="no-print">
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="padding: 0.4rem 0.85rem; font-size: 0.7rem; text-decoration: none;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            <span>Open PDF Resume</span>
+          </a>
+          <button class="btn btn-outline" id="print-cv-btn" style="padding: 0.4rem 0.85rem; font-size: 0.7rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+            <span>Print CV</span>
+          </button>
+          <button class="modal-close-btn" id="close-cv-modal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <div class="cv-paper">
+          <div class="cv-header">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+              <img src="/profile.png" alt="Mathuumitha Thevarajah" style="width: 68px; height: 68px; border-radius: 12px; border: 2px solid var(--gold-primary); object-fit: contain; background: var(--bg-card-inner); padding: 2px;" />
+              <div>
+                <h1 style="font-size: 1.8rem; font-weight: 900; color: #fff;">Mathuumitha Thevarajah</h1>
+                <p style="color: var(--gold-primary); font-family: var(--font-mono); font-weight: 700; font-size: 0.85rem; margin-top: 0.2rem;">DATA ANALYST | UNDERGRADUATE</p>
+                <p style="font-size: 0.75rem; color: var(--text-gray); margin-top: 0.2rem;">University of Vavuniya, Sri Lanka</p>
+              </div>
+            </div>
+            <div style="font-size: 0.75rem; font-family: var(--font-mono); color: var(--text-gray); text-align: right; display: flex; flex-direction: column; gap: 0.2rem;">
+              <div>Email: mathuumithat@gmail.com</div>
+              <div>Academic: mathuumitha.thevarajah@vav.ac.lk</div>
+              <div>Location: Vavuniya, Sri Lanka</div>
+              <div>LinkedIn: <a href="https://www.linkedin.com/in/mathuumitha-thevarajah" target="_blank" rel="noopener noreferrer" style="color: var(--gold-primary); text-decoration: none;">linkedin.com/in/mathuumitha-thevarajah</a></div>
+              <div>GitHub: <a href="https://github.com/t-mathuumitha" target="_blank" rel="noopener noreferrer" style="color: var(--gold-primary); text-decoration: none;">github.com/t-mathuumitha</a></div>
+            </div>
+          </div>
+
+          <div>
+            <div class="cv-sec-title">PROFILE SUMMARY</div>
+            <p style="font-size: 0.8rem; color: #d1d5db; line-height: 1.6;">
+              I'm Mathuumitha Thevarajah, an undergraduate student at the University of Vavuniya with a strong interest in Data Analytics, technology and problem solving. I enjoy transforming raw data into meaningful insights and using analytical thinking to support better decisions.
+            </p>
+          </div>
+
+          <div>
+            <div class="cv-sec-title">EDUCATION</div>
+            <div style="font-size: 0.8rem; display: flex; flex-direction: column; gap: 0.4rem;">
+              <div style="display: flex; justify-content: space-between; font-weight: 800; color: #fff;">
+                <span>BICT. (Hons.) in Information Communication Technology</span>
+                <span style="color: var(--gold-primary); font-family: var(--font-mono);">2022 – Present</span>
+              </div>
+              <p style="color: var(--text-gray); font-size: 0.75rem;">University of Vavuniya, Sri Lanka | Undergraduate Student</p>
+              <p style="font-size: 0.75rem; color: #d1d5db;"><strong style="color: var(--gold-primary);">Relevant Academic Areas:</strong> Data Structures & Algorithms, Database Management Systems (SQL), Object-Oriented Programming with Java, Web Technologies (HTML/CSS/JavaScript), Applied Statistics, Data Mining & Business Intelligence.</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="cv-sec-title">EXPERIENCE & LEADERSHIP</div>
+            <div style="display: flex; flex-direction: column; gap: 1rem; font-size: 0.8rem;">
+              <div>
+                <div style="font-weight: 800; color: #fff;">Secretary — IEEE Computer Society Student Branch Chapter (2025/2026)</div>
+                <div style="font-size: 0.72rem; color: var(--gold-primary); font-family: var(--font-mono); margin-bottom: 0.2rem;">IEEE Student Branch, University of Vavuniya</div>
+                <ul class="timeline-bullet-list" style="margin-top: 0.3rem;">
+                  <li>Support chapter administration and official communication.</li>
+                  <li>Coordinate technical sessions, workshops, and career-focused programs.</li>
+                  <li>Collaborate with Executive Committee members and student volunteers.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div style="font-weight: 800; color: #fff;">Academic Projects (2023 - Present)</div>
+                <div style="font-size: 0.72rem; color: var(--gold-primary); font-family: var(--font-mono); margin-bottom: 0.2rem;">University Academic & Independent Projects</div>
+                <ul class="timeline-bullet-list" style="margin-top: 0.3rem;">
+                  <li>Cleaned and explored tabular datasets using Python and SQL.</li>
+                  <li>Created data analysis and visualization solutions using Excel and Power BI where applicable.</li>
+                  <li>Developed Java-based academic applications using object-oriented programming concepts.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div style="font-weight: 800; color: #fff;">Volunteer & Event Coordination (2023 - Present)</div>
+                <div style="font-size: 0.72rem; color: var(--gold-primary); font-family: var(--font-mono); margin-bottom: 0.2rem;">IEEE & University Events</div>
+                <ul class="timeline-bullet-list" style="margin-top: 0.3rem;">
+                  <li>Assisted with event preparation and participant communication.</li>
+                  <li>Contributed to technical sessions, workshops, and career-focused events.</li>
+                </ul>
+              </div>
+
+              <div>
+                <div style="font-weight: 800; color: #fff;">Faculty Coordinator — Zero Plastic Community (2025/2026)</div>
+                <div style="font-size: 0.72rem; color: var(--gold-primary); font-family: var(--font-mono); margin-bottom: 0.2rem;">University of Vavuniya</div>
+                <ul class="timeline-bullet-list" style="margin-top: 0.3rem;">
+                  <li>Leading faculty-level environmental sustainability campaigns and awareness workshops.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="cv-sec-title">TECHNICAL PROFICIENCIES</div>
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; font-size: 0.75rem;">
+              <div style="padding: 0.5rem; background: #161616; border: 1px solid var(--border-color); border-radius: 6px;">
+                <strong style="color: #fff;">Python</strong> - Pandas, NumPy, Matplotlib
+              </div>
+              <div style="padding: 0.5rem; background: #161616; border: 1px solid var(--border-color); border-radius: 6px;">
+                <strong style="color: #fff;">SQL & Databases</strong> - MySQL, Schema Design
+              </div>
+              <div style="padding: 0.5rem; background: #161616; border: 1px solid var(--border-color); border-radius: 6px;">
+                <strong style="color: #fff;">Power BI & Excel</strong> - DAX, Power Query
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Project Details & Interactive Demo Modal -->
+  <div class="modal-backdrop" id="project-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div>
+          <span style="font-size: 0.65rem; font-family: var(--font-mono); font-weight: 800; color: var(--gold-primary); background: rgba(234, 179, 8, 0.1); padding: 0.2rem 0.5rem; border-radius: 4px;" id="pm-num">
+            PROJECT 01
+          </span>
+          <div class="modal-title" id="pm-title" style="margin-top: 0.25rem;">Project Title</div>
+        </div>
+        <button class="modal-close-btn" id="close-project-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="modal-body" id="pm-body">
+        <!-- Injected via JavaScript based on selected project -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Admin Login Password Protection Modal -->
+  <div class="modal-backdrop" id="admin-login-modal">
+    <div class="modal-window" style="max-width: 440px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <div class="modal-title">Admin Authentication</div>
+        </div>
+        <button class="modal-close-btn" id="close-admin-login-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 1.5rem;">
+        <p style="font-size: 0.8rem; color: var(--text-gray); margin-bottom: 1.25rem;">
+          Please enter the administrator access password to manage portfolio projects.
+        </p>
+        <form id="admin-login-form" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label class="form-label" for="admin-password-input">ADMIN PASSWORD</label>
+            <input type="password" id="admin-password-input" class="form-input" placeholder="Enter admin password..." required autocomplete="current-password" />
+          </div>
+          <div id="admin-login-error" style="display: none; font-size: 0.75rem; font-family: var(--font-mono); color: #ef4444; background: rgba(239, 68, 68, 0.1); border: 1px solid rgba(239, 68, 68, 0.3); padding: 0.6rem; border-radius: 8px;">
+            Invalid administrator password. Access denied.
+          </div>
+          <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 0.5rem;">
+            <button type="button" class="btn btn-outline" id="cancel-admin-login-btn" style="padding: 0.5rem 1rem; font-size: 0.8rem;">CANCEL</button>
+            <button type="submit" class="btn btn-gold" style="padding: 0.5rem 1.25rem; font-size: 0.8rem;">UNLOCK ADMIN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Add / Edit Project Admin Form Modal -->
+  <div class="modal-backdrop" id="admin-project-modal">
+    <div class="modal-window" style="max-width: 680px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          <div class="modal-title" id="admin-project-modal-title">Add New Project</div>
+        </div>
+        <button class="modal-close-btn" id="close-admin-project-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 1.5rem; max-height: 80vh; overflow-y: auto;">
+        <form id="admin-project-form" style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <input type="hidden" id="proj-form-id" value="" />
+          
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="proj-form-title">PROJECT TITLE *</label>
+              <input type="text" id="proj-form-title" class="form-input" placeholder="e.g. Sales Insights Dashboard" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="proj-form-cat">CATEGORY *</label>
+              <select id="proj-form-cat" class="form-input" required style="cursor: pointer;">
+                <option value="data">Data Analytics</option>
+                <option value="visualization">Power BI / Dashboards</option>
+                <option value="software">Java / Software</option>
+                <option value="web">Web Apps</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="proj-form-subtitle">SHORT SUBTITLE / TAGLINE</label>
+              <input type="text" id="proj-form-subtitle" class="form-input" placeholder="e.g. Executive Power BI Reporting" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="proj-form-badge">BADGE TEXT</label>
+              <input type="text" id="proj-form-badge" class="form-input" placeholder="e.g. Power BI & DAX" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="proj-form-tags">TECHNOLOGIES / SKILLS (Comma Separated)</label>
+            <input type="text" id="proj-form-tags" class="form-input" placeholder="e.g. Power BI, DAX, SQL, Excel" />
+          </div>
+
+          <!-- Project Image Upload & Live Preview -->
+          <div class="form-group">
+            <label class="form-label">PROJECT IMAGE (Upload File or Image URL)</label>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              <div style="position: relative;">
+                <input type="file" id="proj-form-file" accept="image/png, image/jpeg, image/jpg, image/webp" class="form-input" style="padding: 0.4rem; cursor: pointer;" />
+                <span style="font-size: 0.7rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.25rem; display: block;">
+                  Supported formats: JPG, JPEG, PNG, WebP (Max size: 10MB)
+                </span>
+              </div>
+              <div>
+                <input type="text" id="proj-form-image" class="form-input" placeholder="Or enter image URL (https://...)" />
+              </div>
+              <div style="padding: 0.75rem; background: var(--bg-card-inner); border: 1px solid var(--border-color); border-radius: 10px;">
+                <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                  <span>LIVE IMAGE PREVIEW</span>
+                  <span id="proj-img-status" style="color: var(--gold-primary);">Ready</span>
+                </div>
+                <div style="width: 100%; height: 180px; border-radius: 8px; overflow: hidden; background: var(--bg-card); display: flex; align-items: center; justify-content: center; position: relative;">
+                  <img id="proj-img-preview" src="" alt="Preview" style="width: 100%; height: 100%; object-fit: cover; display: none;" />
+                  <div id="proj-img-placeholder" style="text-align: center; color: var(--text-muted); font-size: 0.75rem; font-family: var(--font-mono);">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin: 0 auto 0.4rem auto; opacity: 0.5;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    Upload an image above or enter an Image URL to see live preview
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="proj-form-desc">SHORT DESCRIPTION *</label>
+            <textarea id="proj-form-desc" class="form-textarea" rows="3" placeholder="Brief summary of project objectives and outcomes..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="proj-form-highlights">KEY HIGHLIGHTS / BULLETS (One per line)</label>
+            <textarea id="proj-form-highlights" class="form-textarea" rows="3" placeholder="- Built with Java Swing UI adhering to strict OOP principles&#10;- Relational database integration for audit logging"></textarea>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="proj-form-github">GITHUB LINK</label>
+              <input type="url" id="proj-form-github" class="form-input" placeholder="https://github.com/Mathuumitha/..." />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="proj-form-linkedin">LINKEDIN LINK</label>
+              <input type="url" id="proj-form-linkedin" class="form-input" placeholder="https://www.linkedin.com/in/mathuumitha-thevarajah" />
+            </div>
+          </div>
+
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="proj-form-demo">LIVE DEMO LINK (Optional)</label>
+              <input type="text" id="proj-form-demo" class="form-input" placeholder="e.g. https://... or #" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="proj-form-order">DISPLAY ORDER</label>
+              <input type="number" id="proj-form-order" class="form-input" placeholder="1, 2, 3..." min="1" />
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.6rem; padding: 0.5rem 0;">
+            <input type="checkbox" id="proj-form-visible" checked style="accent-color: var(--gold-primary); width: 16px; height: 16px; cursor: pointer;" />
+            <label for="proj-form-visible" style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-white); cursor: pointer;">
+              Visible on Public Portfolio
+            </label>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+            <button type="button" class="btn btn-outline" id="cancel-admin-project-btn" style="padding: 0.5rem 1.25rem; font-size: 0.8rem;">CANCEL</button>
+            <button type="submit" class="btn btn-gold" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;" id="save-project-btn">SAVE PROJECT</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. View Certificate Lightbox Modal -->
+  <div class="modal-backdrop" id="cert-lightbox-modal">
+    <div class="modal-window" style="max-width: 720px;">
+      <div class="modal-header">
+        <div>
+          <span style="font-size: 0.65rem; font-family: var(--font-mono); font-weight: 800; color: var(--gold-primary); background: rgba(234, 179, 8, 0.1); border: 1px solid var(--border-gold); padding: 0.2rem 0.55rem; border-radius: 4px;" id="cert-view-badge">
+            CREDENTIAL
+          </span>
+          <div class="modal-title" id="cert-view-title" style="margin-top: 0.35rem;">Certificate Title</div>
+          <div style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--gold-primary); font-weight: 700; margin-top: 0.15rem;" id="cert-view-issuer">
+            Issuing Organization
+          </div>
+        </div>
+        <button class="modal-close-btn" id="close-cert-lightbox-btn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 1.25rem; max-height: 80vh; overflow-y: auto;">
+        
+        <!-- Responsive Full Certificate Image Container -->
+        <div class="cert-lightbox-container" id="cert-view-image-container">
+          <img id="cert-view-img" class="cert-lightbox-img" src="" alt="Certificate" style="display: none;" />
+          <div id="cert-view-placeholder" style="text-align: center; padding: 2rem; color: var(--text-muted); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.75rem;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="1.5"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            <div style="font-weight: 700; color: #fff; font-size: 1.1rem;">Official Credential Verification</div>
+            <p style="font-size: 0.82rem; color: var(--text-gray); max-width: 480px; margin: 0 auto;">
+              Verified completion credential awarded by <span id="cert-view-issuer-inline" style="color: var(--gold-primary); font-weight: 700;">Organization</span> in <span id="cert-view-year-inline" style="color: #fff;">2024</span>.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 1.25rem; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 1.25rem;">
+          <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.4rem;">
+            <h4 style="font-size: 0.85rem; font-weight: 800; color: #fff; margin: 0;">Credential Overview</h4>
+            <span id="cert-view-cred-id" style="font-size: 0.72rem; font-family: var(--font-mono); color: var(--gold-primary); display: none;"></span>
+          </div>
+          <p id="cert-view-desc" style="font-size: 0.82rem; color: var(--text-sub); line-height: 1.6; margin: 0;">
+            Description of the certificate...
+          </p>
+          <div id="cert-view-link-wrapper" style="margin-top: 1rem; display: none;">
+            <a id="cert-view-link" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; padding: 0.5rem 1rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              <span>Verify Official Certificate Link</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Admin Manage Existing Certificates Modal -->
+  <div class="modal-backdrop" id="admin-cert-list-modal">
+    <div class="modal-window" style="max-width: 840px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+          <div class="modal-title">Certifications Management Dashboard</div>
+        </div>
+        <button class="modal-close-btn" id="close-admin-cert-list-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 1.5rem; max-height: 80vh; overflow-y: auto;">
+        
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem; flex-wrap: wrap; gap: 0.75rem;">
+          <div>
+            <h3 style="font-size: 1rem; font-weight: 800; color: #fff; margin: 0;">Certificates Directory</h3>
+            <p style="font-size: 0.75rem; color: var(--text-gray); margin-top: 0.2rem;">Add, update, or remove credentials displayed in the public portfolio.</p>
+          </div>
+          <button id="admin-list-add-cert-btn" class="btn btn-gold" style="padding: 0.45rem 0.9rem; font-size: 0.75rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="18" y1="12" x2="6" y2="12"></line></svg>
+            <span>+ ADD NEW CERTIFICATE</span>
+          </button>
+        </div>
+
+        <div class="admin-cert-table-wrapper">
+          <table class="admin-cert-table">
+            <thead>
+              <tr>
+                <th style="width: 70px;">IMAGE</th>
+                <th>TITLE & CATEGORY</th>
+                <th>ORGANIZATION</th>
+                <th>YEAR</th>
+                <th style="text-align: right; min-width: 130px;">ACTIONS</th>
+              </tr>
+            </thead>
+            <tbody id="admin-cert-table-body">
+              <!-- Dynamically populated via JS -->
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 7. Add / Edit Certificate Form Modal -->
+  <div class="modal-backdrop" id="admin-cert-modal">
+    <div class="modal-window" style="max-width: 680px;">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 0.6rem;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+          <div class="modal-title" id="admin-cert-modal-title">Add Certificate</div>
+        </div>
+        <button class="modal-close-btn" id="close-admin-cert-modal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="modal-body" style="padding: 1.5rem; max-height: 80vh; overflow-y: auto;">
+        <form id="admin-cert-form" style="display: flex; flex-direction: column; gap: 1.2rem;">
+          <input type="hidden" id="cert-form-id" value="" />
+
+          <!-- Certificate Title & Category -->
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="cert-form-title">CERTIFICATE TITLE *</label>
+              <input type="text" id="cert-form-title" class="form-input" placeholder="e.g. Python for Beginners — Online Certificate" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cert-form-badge">CATEGORY / BADGE *</label>
+              <input type="text" id="cert-form-badge" class="form-input" placeholder="e.g. Python, Data Science, Masterclass" required />
+            </div>
+          </div>
+
+          <!-- Issuing Organization & Year -->
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="cert-form-issuer">ISSUING ORGANIZATION *</label>
+              <input type="text" id="cert-form-issuer" class="form-input" placeholder="e.g. University of Moratuwa" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cert-form-date">YEAR *</label>
+              <input type="text" id="cert-form-date" class="form-input" placeholder="e.g. 2024" required />
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="form-group">
+            <label class="form-label" for="cert-form-desc">SHORT DESCRIPTION</label>
+            <textarea id="cert-form-desc" class="form-textarea" rows="3" placeholder="Brief details about course curriculum or credential achievements..."></textarea>
+          </div>
+
+          <!-- External Verification Link & Credential ID -->
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="cert-form-link">CERTIFICATE LINK (Optional)</label>
+              <input type="url" id="cert-form-link" class="form-input" placeholder="e.g. https://verify.organization.com/cert/1234" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cert-form-cred-id">CREDENTIAL ID (Optional)</label>
+              <input type="text" id="cert-form-cred-id" class="form-input" placeholder="e.g. UC-789a-4bc12" />
+            </div>
+          </div>
+
+          <!-- Order & Visibility -->
+          <div class="form-group-row">
+            <div class="form-group">
+              <label class="form-label" for="cert-form-order">DISPLAY ORDER</label>
+              <input type="number" id="cert-form-order" class="form-input" placeholder="1, 2, 3..." min="1" />
+            </div>
+            <div class="form-group" style="display: flex; align-items: flex-end; padding-bottom: 0.5rem;">
+              <div style="display: flex; align-items: center; gap: 0.6rem;">
+                <input type="checkbox" id="cert-form-visible" checked style="accent-color: var(--gold-primary); width: 16px; height: 16px; cursor: pointer;" />
+                <label for="cert-form-visible" style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-white); cursor: pointer;">
+                  Visible on Public Portfolio
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certificate Image Upload & Live Preview -->
+          <div class="form-group">
+            <label class="form-label">CERTIFICATE IMAGE * (Upload File or URL)</label>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+              
+              <!-- File Input -->
+              <div style="position: relative;">
+                <input type="file" id="cert-form-file" accept="image/png, image/jpeg, image/jpg, image/webp" class="form-input" style="padding: 0.4rem; cursor: pointer;" />
+                <span style="font-size: 0.7rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.25rem; display: block;">
+                  Supported formats: JPG, JPEG, PNG, WebP (Max file size: 5MB)
+                </span>
+              </div>
+
+              <!-- URL Input Fallback / Base64 Storage -->
+              <div>
+                <input type="text" id="cert-form-image" class="form-input" placeholder="Or paste certificate image URL / base64..." />
+              </div>
+
+              <!-- Live Preview Box -->
+              <div style="padding: 0.75rem; background: var(--bg-card-inner); border: 1px solid var(--border-color); border-radius: 10px;">
+                <div style="font-size: 0.7rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 0.5rem; display: flex; align-items: center; justify-content: space-between;">
+                  <span>IMAGE PREVIEW & ASPECT RATIO</span>
+                  <span id="cert-img-status" style="color: var(--gold-primary);">No Image Selected</span>
+                </div>
+                <div style="width: 100%; min-height: 200px; max-height: 320px; border-radius: 8px; overflow: hidden; background: var(--bg-card); display: flex; align-items: center; justify-content: center; position: relative;">
+                  <img id="cert-img-preview" src="" alt="Preview" style="max-width: 100%; max-height: 300px; object-fit: contain; display: none;" />
+                  <div id="cert-img-placeholder" style="text-align: center; color: var(--text-muted); font-size: 0.75rem; font-family: var(--font-mono); padding: 1.5rem;">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin: 0 auto 0.5rem auto; opacity: 0.5;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
+                    Upload an image file above or enter an image URL to see live preview
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: flex-end; gap: 0.75rem; margin-top: 1rem; border-top: 1px solid var(--border-color); padding-top: 1rem;">
+            <button type="button" class="btn btn-outline" id="cancel-admin-cert-btn" style="padding: 0.5rem 1.25rem; font-size: 0.8rem;">CANCEL</button>
+            <button type="submit" class="btn btn-gold" style="padding: 0.5rem 1.5rem; font-size: 0.8rem;" id="save-cert-btn">SAVE CERTIFICATE</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container">
+    <div class="toast" id="toast-message">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--gold-primary)" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      <span id="toast-text">Action completed successfully.</span>
+    </div>
+  </div>
+
+  <!-- Vanilla JavaScript Logic -->
+  <script type="module" src="/script.js"></script>
+</body>
+</html>
